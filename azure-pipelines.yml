@@ -19,7 +19,7 @@ steps:
     resourceGroupName: 'myAzureRmPipeline'
     location: 'Central US'
     templateLocation: 'Linked artifact'
-    csmFile: 'azuredeploy.json'
+    csmFile: 'CreateWebApp/azuredeploy.json'
     overrideParameters: '-projectName mypipeline -linkedTemplateUri https://raw.githubusercontent.com/hirouniverse/study-azure-pipeline-arm-template/master/CreateWebApp/linkedStorageAccount.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
